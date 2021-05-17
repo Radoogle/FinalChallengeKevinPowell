@@ -2,6 +2,30 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+:root {
+  --color-one: #2e323f;
+  --color-two: #3b4050;
+  --color-three: #6f737f;
+  --color-four: #a59678;
+  --color-five: #ffffff;
+}
+
+body {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-one);
+  /* font-family: "Oswald", sans-serif; */
+}
+
+.header {
+  background-color: var(--color-two);
+}
+
+.nav {
+  background-color: var(--color-one);
 }

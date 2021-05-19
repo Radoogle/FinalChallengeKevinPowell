@@ -19,7 +19,6 @@ body {
   font-size: 1.125rem;
   line-height: 1.6;
   color: var(--color-one);
-  /* font-family: "Oswald", sans-serif; */
 }
 
 img {
@@ -33,7 +32,9 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   margin-top: 0;
@@ -55,13 +56,28 @@ h3 {
 }
 
 h4 {
+  font-size: 1.5rem;
   color: var(--color-five);
+}
+
+h5 {
+  font-size: 1.3125rem;
+  margin: 2rem auto 1rem;
+}
+
+p {
+  text-align: center;
+}
+
+footer {
+  font-size: 1rem;
 }
 
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 header,
@@ -94,7 +110,9 @@ footer {
   border-radius: 100px;
   display: inline-block;
   padding: 0.25em 1.25em;
-  font-weight: 900;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* .logo {
@@ -123,14 +141,25 @@ footer {
   opacity: 0.65;
 }
 
+section,
+footer {
+  padding: 10% 0;
+}
+
+main {
+  font-size: 1.3125rem;
+}
+
 .hero {
   color: var(--color-five);
   background-color: var(--color-two);
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  font-size: 1.5rem;
 }
 
 .sub-hero {
   background-color: var(--color-three);
+  /* padding: 10% 0; */
 }
 
 .aside__card {

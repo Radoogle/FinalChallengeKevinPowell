@@ -56,7 +56,8 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+  font-size: 2rem;
   color: var(--color-five);
 }
 
@@ -66,7 +67,7 @@ h5 {
 }
 
 p {
-  text-align: center;
+  text-align: justify;
 }
 
 footer {
@@ -101,7 +102,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 .btn {
@@ -115,19 +115,8 @@ footer {
   text-transform: uppercase;
 }
 
-/* .logo {
-  height: 30px;
-} */
-
 .nav {
   width: 100%;
-  /* display: flex; */
-  /* justify-items: flex-end; */
-}
-
-.nav__item {
-  /* display: inline-block;
-  width: 100%; */
 }
 
 .nav__link {
@@ -142,24 +131,29 @@ footer {
 }
 
 section,
-footer {
-  padding: 10% 0;
+footer,
+main {
+  padding: 10% 0 5%;
 }
 
 main {
   font-size: 1.3125rem;
 }
 
+.sidebar {
+  font-size: 1.125rem;
+  margin: 0;
+  padding: 0;
+}
+
 .hero {
   color: var(--color-five);
   background-color: var(--color-two);
-  /* padding: 100px 0; */
   font-size: 1.5rem;
 }
 
 .sub-hero {
   background-color: var(--color-three);
-  /* padding: 10% 0; */
 }
 
 .aside__card {
@@ -169,22 +163,68 @@ main {
   padding: 1em;
 }
 
+.sidebar__row {
+  display: flex;
+  flex-direction: row;
+}
+
 @media (min-width: 700px) {
   h1 {
     font-size: 3.75rem;
   }
 
+  h5,
+  .list__item {
+    text-align: left;
+  }
+
   .row {
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .col,
+  .aside__card {
+    align-self: stretch;
   }
 
   .col + .col {
-    margin-left: 3em;
+    margin-left: 2em;
+  }
+
+  .col1 {
+    width: 40%;
+  }
+
+  .col2 {
+    width: 50%;
   }
 }
 
 @media (min-width: 1000px) {
   h1 {
     font-size: 5.625rem;
+  }
+
+  main {
+    display: flex;
+  }
+
+  .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  aside.sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col1 {
+    width: 40%;
+  }
+
+  .col2 {
+    width: 50%;
   }
 }

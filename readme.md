@@ -1,6 +1,6 @@
-#Your Final Challenge
+# Your Final Challenge
 
-##Conquering Responsive Layouts / Day 21 | You've done it!
+## Conquering Responsive Layouts / Day 21 | You've done it!
 
 This challenge reinforces everything we've looked at.
 
